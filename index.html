@@ -1,76 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Store</title>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="css/jqcart.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
-    
-</head>
-<body>
-    <div class="header" >
-        <div class="label-place"></div>
-    </div>
-   <section class="slide_menu">
-    <div class="slick_slider">
-        <div><img src="img/slider/IMG_20170720_222808.jpg" alt=""></div>
-        <div><img src="img/slider/IMG_20170720_223252.jpg" alt=""></div>
-        <div><img src="img/slider/IMG_20170720_223622.jpg" alt=""></div>
-        <div><img src="img/slider/IMG_20170720_224233.jpg" alt=""></div>
-        <div><img src="img/slider/IMG_20170720_225005.jpg" alt=""></div>
-        <div><img src="img/slider/IMG_20170720_225435.jpg" alt=""></div>
-        <div><img src="img/slider/IMG_20170720_225924.jpg" alt=""></div>
-        <div><img src="img/slider/IMG_20170720_230502.jpg" alt=""></div>
-        <div><img src="img/slider/IMG_20170720_231240.jpg" alt=""></div>
-        <div><img src="img/slider/IMG_20170720_231905.jpg" alt=""></div>
-        <div><img src="img/slider/IMG_20170720_232220.jpg" alt=""></div>
-        <div><img src="img/slider/IMG_20170720_232510.jpg" alt=""></div>
-        <div><img src="img/slider/IMG_20170720_233110.jpg" alt=""></div>
-        <div><img src="img/slider/IMG_20170720_233253.jpg" alt=""></div>
-        <div><img src="img/slider/IMG_20170720_233446.jpg" alt=""></div>
-        <div><img src="img/slider/IMG_20170720_233621.jpg" alt=""></div>
-        <div><img src="img/slider/IMG_20170720_233815.jpg" alt=""></div>
-        <div><img src="img/slider/IMG_20170723_115351.jpg" alt=""></div>
-        <div><img src="img/slider/IMG_20170723_121904.jpg" alt=""></div>
-               
-    </div>
-
-        <h1 class="content_title">То что нужно покупателю</h1>
-       <div class="content">
-           <div class="product">
+   <head>
+      <meta charset="UTF-8">
+      <title>Store</title>
+      <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+      <link href="css/jqcart.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/reset.css">
+   </head>
+   <body>
+      <img src="img/ornaments_texture1138.jpg" class="bg-fon" alt="123">
+      <div class="header" >
+         <div class="head_logo"><img src="img/SEGA_logo.png" alt=""></div>
+         <ul class="head_menu-main">
+            <li><a href="">Work</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+         </ul>
+         <button class="clear_bay" id="clear">Очистить корзину</button>
+         <div class="label-place"></div>
+      </div>
+      <section class="slide_menu">
+         <div class="slick_slider">
+            <div><img src="img/slider/IMG_20170720_225005.jpg" alt=""></div>
+            <div><img src="img/slider/IMG_20170720_225435.jpg" alt=""></div>
+            <div><img src="img/slider/IMG_20170720_225924.jpg" alt=""></div>
+            <div><img src="img/slider/IMG_20170720_230502.jpg" alt=""></div>
+            <div><img src="img/slider/IMG_20170720_231240.jpg" alt=""></div>
+            <div><img src="img/slider/IMG_20170720_231905.jpg" alt=""></div>
+            <div><img src="img/slider/IMG_20170720_232220.jpg" alt=""></div>
+            <div><img src="img/slider/IMG_20170720_232510.jpg" alt=""></div>
+            <div><img src="img/slider/IMG_20170720_233110.jpg" alt=""></div>
+            <div><img src="img/slider/IMG_20170720_233253.jpg" alt=""></div>
+            <div><img src="img/slider/IMG_20170720_233446.jpg" alt=""></div>
+            <div><img src="img/slider/IMG_20170720_233621.jpg" alt=""></div>
+            <div><img src="img/slider/IMG_20170720_233815.jpg" alt=""></div>
+            <div><img src="img/slider/IMG_20170723_115351.jpg" alt=""></div>
+            <div><img src="img/slider/IMG_20170723_121904.jpg" alt=""></div>
+         </div>
+         <h1 class="content_title">То что нужно покупателю</h1>
+         <div class="content">
+            <div class="product">
                <div class="product-img">
-                   <img class="product-bg" src="img/hg1.jpg" alt="">
-                   <img class="product-logo" src="img/icon_zoom.png" alt="">
+                  <img class="product-bg" src="img/hg1.jpg" alt="">
+                  <img class="product-logo" id="load" onclick="sendAJAX()" src="img/icon_zoom.png" alt="">
                </div>
                <div class="product-price">
-                   <span>price 100$</span>
-                    <button id="clear">Очистить корзину (вызов метода clearCart)</button>
-  <button id="open">Открыть корзину (вызов метода openCart)</button>
-                   <button class="add_item" data-id="7" data-title="Bugatti Veyron Super Sports" data-price="200" data-img="http://site.com/img/photo.png">Добавить в корзину</button>
+                  <h6>Название товара</h6>
+                  <span>Цена: 100грн.</span>
+                  <div class="product-button">
+                     <button class="add_item button7" data-id="7" data-title="my" data-price="100" data-img="img/slider/IMG_20170723_121904.jpg">В корзину</button>
+                     <button id="open" class="button7">Открыть корзину</button>
+                  </div>
                </div>
-               
-           </div>
-           <div class="product"></div>
-           <div class="product"></div>
-           <div class="product"></div>
-           <div class="product"></div>
-           <div class="product"></div>
-           <div class="product"></div>
-           <div class="product"></div>
-           <div class="product"></div>
-       </div>
-   </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="js/jqcart.min.js"></script>
-    <script src="js/js.js"></script>
-    <script>
-
-    </script>
-</body>
+            </div>
+            <div class="product"></div>
+            <div class="product"></div>
+            <div class="product"></div>
+            <div class="product"></div>
+            <div class="product"></div>
+            <div class="product"></div>
+            <div class="product"></div>
+            <div class="product"></div>
+         </div>
+      </section>
+      <section class="nav_callback">
+         <span>contact us</span>
+          <div class="nav_link_call">
+              <div class="nav_link_png_first">
+                 <a href="#"><img class="nav_link_whatsapp" src="img/form/WhatsApp.png" alt=""></a>
+                  <img class="nav_link_skype" src="img/form/skype.png" alt="">
+              </div>
+              <div class="nav_link_png">
+                  <img class="nav_link_twitter" src="img/form/Twitter.png" alt="">
+                  <img class="nav_link_viber" src="img/form/viber.png" alt="">
+              </div>
+              <div class="nav_link_png_and">
+                  <img class="nav_link_facebook" src="img/form/facebook.png" alt="">
+                  <img class="nav_link_center" src="img/form/central.png" alt="">
+                  <img class="nav_link_instagram" src="img/form/instagram.png" alt="">
+              </div>
+          </div>
+      </section>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--      <script src="js/jquery-1.11.3.min.js"></script>-->
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+      <script src="js/developer/jqcart.js"></script>
+      <script src="js/js.js"></script>
+      <script>
+       
+      </script>
+   </body>
 </html>

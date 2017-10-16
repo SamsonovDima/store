@@ -1,0 +1,16 @@
+ <div class="photolab">
+                  <a href="#" class="photolabexid">X</a>
+                <div class="photo_g">
+        <div><img src="img/slider/IMG_20170720_231905.jpg" alt=""></div>
+        <div><img src="img/slider/IMG_20170720_232220.jpg" alt=""></div>
+        <div><img src="img/slider/IMG_20170720_224233.jpg" alt=""></div>
+        <div><img src="img/slider/IMG_20170720_230502.jpg" alt=""></div>
+               </div>
+               <div class="photo_n">
+        <div><img src="img/slider/litl/IMG_20170720_223252.jpg" alt=""></div>
+        <div><img src="img/slider/litl/IMG_20170720_223622.jpg" alt=""></div>
+        <div><img src="img/slider/litl/IMG_20170720_225924.jpg" alt=""></div>
+        <div><img src="img/slider/litl/IMG_20170720_233621.jpg" alt=""></div>
+              
+               </div>
+    <script>

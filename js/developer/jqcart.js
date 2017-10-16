@@ -13,7 +13,7 @@
     orderPreview = '',
     totalCnt = 0,
     visibleLabel = false,
-    label = $('<div class="jqcart-cart-label"><span class="jqcart-title">Оформить заказ</span><span class="jqcart-total-cnt">0</span></div>'),
+    label = $('<div class="jqcart-cart-label"><img class="jqcart-title" src="img/cart2.png" alt=""><span class="jqcart-total-cnt">0</span></div>'),
     modal = '<div class="jqcart-layout"><div class="jqcart-checkout">123</div></div>',
     orderform = '<p class="jqcart-cart-title">Контактная информация:</p><form class="jqcart-orderform"><p><label>ФИО:</label><input type="text" name="user_name"></p><p><label>Телефон:</label><input type="text" name="user_phone"></p><p><label>Email:</label><input type="text" name="user_mail"></p><p><label>Адрес:</label><input type="text" name="user_address"></p><p><label>Коментарий:</label><textarea name="user_comment"></textarea></p><p><input type="submit" value="Отправить заказ"><input type="reset" value="Вернуться к покупкам"></p></form>';
   var opts = {
@@ -21,7 +21,7 @@
 		cartLabel: 'body',
 		visibleLabel: false,
 		openByAdding: false,
-    handler: '/',
+        handler: '/php/handler.php',
 		currency: '$'
   };
   var actions = {
